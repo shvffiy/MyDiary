@@ -1,0 +1,118 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Saffiyah's Little Diary</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka&family=Nunito&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<div class="floaty">
+  <span style="left:8%">&hearts;</span>
+  <span style="left:28%; animation-delay:3s">&#10022;</span>
+  <span style="left:50%; animation-delay:6s">&hearts;</span>
+  <span style="left:72%; animation-delay:2s">&#10022;</span>
+  <span style="left:92%; animation-delay:5s">&hearts;</span>
+</div>
+
+<div class="page">
+
+  
+  <marquee>&hearts; welcome to my little diary &hearts; thanks for stopping by &#10022; make yourself comfy !! &hearts;</marquee>
+
+
+  <header>
+    <h1>Hello, everyone! <span class="bow">&#127872;</span></h1>
+    <p class="subtitle">~ welcome to my digital diary ~</p>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <main>
+
+ 
+    <section class="polaroid">
+      <span class="tape"></span>
+      <img src="images/profile.jpg" alt="Photo of Aisyah Saffiyah">
+      <p>me!! &hearts;</p>
+    </section>
+
+   
+    <section class="card">
+      <h2>About me &hearts;</h2>
+      <p>
+        Hiii! I'm <b>Aisyah Saffiyah Binti Yahaya</b>, a <i>student</i> at
+        <abbr title="Universiti Teknologi MARA">UiTM</abbr> Segamat, Johor.
+        I am 20 years old. I am from <u>Kluang, Johor.</u> Nice to meet you!
+      </p>
+     
+      <h3>Things I love</h3>
+      <ul>
+        <li>Apple juice and Matcha</li>
+        <li>Tomorrow X Together</li>
+        <li>Caleb Xia from Love and DeepSpace</li>
+      </ul>
+
+      <p class="stickers">&#127800; &#9749; &#127872; &#11088;</p>
+    </section>
+
+  </main>
+
+
+  <div class="clock-box">
+    <p>&hearts; it's currently &hearts;</p>
+    <p id="clock"></p>
+    <p id="greeting"></p>
+  </div>
+
+<div class="music-box">
+        <h3>&#9835; Now playing: Angel Bite &#9835;</h3>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/62pmQMfcm1leFyeKRfSaDq?utm_source=generator&si=0b79aaae074e494b" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Aisyah Saffiyah. Made with &hearts; for IMD318, UiTM.</p>
+    <p>Created and last updated: 17 November 2026</p>
+  </footer>
+
+</div>
+
+<script>
+  function showClock() {
+    var now = new Date();
+    document.getElementById("clock").innerHTML = now.toLocaleTimeString();
+
+    var hour = now.getHours();
+    var msg;
+    if (hour < 12) {
+      msg = "good morning, sunshine";
+    } else if (hour < 18) {
+      msg = "good afternoon, cutie";
+    } else {
+      msg = "good evening, beloved";
+    }
+    document.getElementById("greeting").innerHTML = msg;
+  }
+
+  showClock();
+  setInterval(showClock, 1000);
+</script>
+
+</body>
+</html>
