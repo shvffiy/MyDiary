@@ -1,0 +1,294 @@
+/* whole page background: a small gingham picture that repeats */
+body {
+  background-image: url(../images/gingham.png);
+  background-color: #FFD6E7;
+  font-family: 'Nunito', sans-serif;
+  color: #9B5578;
+}
+
+/* the pink "diary page" in the middle */
+.page {
+  width: 800px;
+  margin: 20px auto;
+  background-color: #FFF0F5;
+  border: 4px dotted #F48FB8;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 25px #F48FB8;
+}
+
+/* moving text */
+marquee {
+  background-color: #F48FB8;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+/* title */
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 56px;
+  margin-bottom: 0;
+  text-shadow: 3px 3px #FFB6D5;
+}
+
+.subtitle {
+  font-family: 'Fredoka', sans-serif;
+  letter-spacing: 3px;
+  color: #E8A0C0;
+}
+
+h2, h3 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  color: #F48FB8;
+}
+
+/* navigation buttons */
+nav {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  background-color: #FFB6D5;
+  color: #9B5578;
+  font-family: 'Fredoka', sans-serif;
+  padding: 8px 20px;
+  margin: 8px 5px;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px #E8A0C0;
+}
+
+nav a:hover {
+  background-color: #F48FB8;
+  color: white;
+}
+
+/* polaroid photo (floats to the left) */
+.polaroid {
+  position: relative;
+  float: left;
+  width: 250px;
+  background-color: white;
+  padding: 12px;
+  margin: 25px 20px;
+  box-shadow: 5px 5px 15px #E8A0C0;
+  transform: rotate(-4deg);
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.polaroid img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 6px solid #F48FB8;
+  border-radius: 50%;
+}
+
+/* pink tape on top of the polaroid */
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 80px;
+  width: 90px;
+  height: 24px;
+  background-color: #F48FB8;
+  opacity: 0.6;
+}
+
+/* about me card */
+.card {
+  margin: 25px 20px 20px 310px;
+  background-color: white;
+  border: 3px dashed #FFB6D5;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 8px 8px #FFD6E7;
+}
+
+/* heart bullets for lists */
+ul {
+  list-style-type: "♥ ";
+}
+
+.stickers {
+  font-size: 30px;
+}
+
+/* clock */
+.clock-box {
+  clear: both;
+  width: 250px;
+  margin: 0 auto;
+  background-color: white;
+  border: 3px solid #E8A0C0;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+#clock {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  color: #F48FB8;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+hr {
+  border: 2px dotted #F48FB8;
+}
+
+/* ===== EXTRA CUTE (optional: delete this whole part if you don't want it) ===== */
+
+/* the bow wiggles left and right */
+.bow {
+  display: inline-block;
+  animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(-10deg); }
+  50%  { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+/* hearts and stars float up the screen */
+.floaty span {
+  position: fixed;
+  bottom: -40px;
+  font-size: 28px;
+  color: #F48FB8;
+  animation: floatUp 12s infinite;
+}
+
+@keyframes floatUp {
+  0%   { bottom: -40px; opacity: 0; }
+  20%  { opacity: 1; }
+  100% { bottom: 100%; opacity: 0; }
+}
+
+/* ===== BIODATA PAGE ===== */
+
+/* small round photo in the header */
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 5px solid #F48FB8;
+  border-radius: 50%;
+}
+
+/* table with a "lace" double border */
+table {
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+  border: 6px double #F48FB8;
+  border-collapse: collapse;
+}
+
+caption {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  padding: 10px;
+}
+
+th {
+  background-color: #F48FB8;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 2px dotted #FFB6D5;
+}
+
+/* every second row is light pink */
+tr:nth-child(even) td {
+  background-color: #FFF0F5;
+}
+
+/* sticky note for fun facts */
+.note {
+  width: 70%;
+  margin: 30px auto;
+  background-color: #FFD6E7;
+  border: 3px dashed #F48FB8;
+  padding: 10px 25px;
+  transform: rotate(-2deg);
+  box-shadow: 5px 5px #FFB6D5;
+}
+
+/* pre tag */
+pre {
+  text-align: center;
+  font-size: 18px;
+  color: #F48FB8;
+}
+
+.top-link {
+  text-align: center;
+}
+
+.top-link a {
+  color: #9B5578;
+}
+
+/* ===== INTERESTS SECTION ===== */
+.interests {
+  text-align: center;
+}
+
+/* each card sits side by side */
+.fan-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin: 10px;
+  padding: 12px;
+  background-color: white;
+  border: 3px dashed #FFB6D5;
+  border-radius: 20px;
+}
+
+.fan-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #F48FB8;
+  border-radius: 15px;
+}
+
+.music-box {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #FFD6E7;
+  border-radius: 20px;
+}
+
+audio {
+  width: 90%;
+}
